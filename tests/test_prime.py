@@ -32,6 +32,10 @@ def test_is_prime_invalid_inputs():
     assert not is_prime(1.23)
     assert not is_prime('10000')
     assert not is_prime('test')
+    assert not is_prime(None)
+    assert not is_prime([])
+    assert not is_prime({})
+    assert not is_prime(set())
 
 
 def test_get_next_prime():
