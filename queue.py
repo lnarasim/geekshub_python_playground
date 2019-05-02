@@ -25,6 +25,9 @@ class Queue:
     def __len__(self):
         return len(self._container)
 
+    def clear(self):
+        return self._container.clear()
+
 
 class QueueOverflow(Exception):
     def __init__(self, message):

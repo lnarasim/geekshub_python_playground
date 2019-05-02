@@ -80,3 +80,19 @@ def test_add_retrieve_heterogeneous_elements():
     with pytest.raises(QueueUnderflow):
         q.retrieve()
 
+
+def test_clear():
+    q = Queue(20)
+    assert isinstance(q, Queue) and q.max_slots == 20 and len(q) == 0
+
+    # Let us insert 20 elements and verify all get inserted properly
+    for element in range(1, 21):
+        q.add(element)
+        assert len(q) == element
+
+    # let us clear
+    q.clear()
+    assert len(q) == 0
+
+    with pytest.raises(QueueUnderflow):
+        q.retrieve()
