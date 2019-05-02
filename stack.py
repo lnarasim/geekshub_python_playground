@@ -7,7 +7,7 @@ class Stack:
 
     def __init__(self, max_slots=DEFAULT_STACK_SIZE):
         if not isinstance(max_slots, int) or max_slots < 1:
-            self.max_slots = 10
+            self.max_slots = DEFAULT_STACK_SIZE
         else:
             self.max_slots = max_slots
         self._container = []
