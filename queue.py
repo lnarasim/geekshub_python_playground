@@ -22,6 +22,9 @@ class Queue:
         else:
             raise QueueUnderflow("Queue is empty")
 
+    def __contains__(self, item):
+        return item in self._container
+
     def __len__(self):
         return len(self._container)
 

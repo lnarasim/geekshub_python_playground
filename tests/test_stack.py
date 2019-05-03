@@ -68,3 +68,21 @@ def test_pop_stack(pytest_stack):
         pytest_stack.pop()
 
 
+def test_membership_in():
+    s = stack.Stack()
+
+    for item in range(6):
+        s.push(item)
+
+    for item in range(6):
+        assert item in s
+
+
+def test_membership_not_in():
+    s = stack.Stack()
+
+    for item in range(6):
+        s.push(item)
+
+    for item in range(6, 20):
+        assert item not in s

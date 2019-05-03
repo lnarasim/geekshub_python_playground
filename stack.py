@@ -4,7 +4,6 @@ DEFAULT_STACK_SIZE = 10
 
 
 class Stack:
-
     def __init__(self, max_slots=DEFAULT_STACK_SIZE):
         if not isinstance(max_slots, int) or max_slots < 1:
             self.max_slots = DEFAULT_STACK_SIZE
@@ -27,14 +26,15 @@ class Stack:
     def __len__(self):
         return len(self._container)
 
+    def __contains__(self, item):
+        return item in self._container
+
 
 class StackOverflow(Exception):
-
     def __init__(self, message):
         self.message = message
 
 
 class StackUnderflow(Exception):
-
     def __init__(self, message):
         self.message = message
