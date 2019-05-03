@@ -96,3 +96,23 @@ def test_clear():
 
     with pytest.raises(QueueUnderflow):
         q.retrieve()
+
+
+def test_membership_in():
+    q = Queue()
+
+    for item in range(6):
+        q.add(item)
+
+    for item in range(6):
+        assert item in q
+
+
+def test_membership_not_in():
+    q = Queue()
+
+    for item in range(6):
+        q.add(item)
+
+    for item in range(6, 20):
+        assert item not in q
