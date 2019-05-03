@@ -44,3 +44,7 @@ def test_factorial_with_cache():
 
     with pytest.raises(ValueError):
         factorial_with_cache(20.0)
+
+
+def test_factorial_cache_cache_tests():
+    print(factorial_with_cache.cache_info())
