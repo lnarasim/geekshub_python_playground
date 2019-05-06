@@ -1,5 +1,5 @@
 import pytest
-from queue import Queue, QueueUnderflow, QueueOverflow, DEFAULT_QUEUE_SIZE
+from geekshub_pyproblems.queue import Queue, QueueUnderflow, QueueOverflow, DEFAULT_QUEUE_SIZE
 
 
 def test_create_queue_default_size():

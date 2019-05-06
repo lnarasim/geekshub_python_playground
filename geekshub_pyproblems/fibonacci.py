@@ -1,5 +1,6 @@
 d = dict()
 
+
 def fib(n):
     if n < 0:
         raise ValueError("Invalid value")

@@ -1,5 +1,5 @@
 import pytest
-from fibonacci import fib, is_prime
+from geekshub_pyproblems.fibonacci import fib, is_prime
 
 
 def test_is_prime_valid_values():

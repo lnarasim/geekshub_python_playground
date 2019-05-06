@@ -5,6 +5,7 @@ python:
 
 install:
   - pip install pytest
+  - pip install pytest-cov
 
 # command to run tests
 script: python -m pytest -v

@@ -1,5 +1,5 @@
 import pytest
-from pythagorean_triple import is_pythagorean_triple
+from geekshub_pyproblems.pythagorean_triple import is_pythagorean_triple
 
 
 def test_pythagorean_triple_valid_values():
