@@ -1,0 +1,2 @@
+python -m pylint geekshub_pyproblems
+python -m pytest -v

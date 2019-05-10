@@ -1,23 +1,5 @@
 import pytest
-from geekshub_pyproblems.fibonacci import fib, is_prime
-
-
-def test_is_prime_valid_values():
-    assert not is_prime(1)
-    assert is_prime(2)
-    assert is_prime(3)
-    assert not is_prime(4)
-    assert is_prime(5)
-    assert is_prime(7)
-    assert not is_prime(7 * 11)
-    assert is_prime(13 * 1)
-
-def test_is_prime_invalid_values():
-    with pytest.raises(ValueError):
-        is_prime(-1)
-
-    with pytest.raises(TypeError):
-        is_prime(None)
+from geekshub_pyproblems.fibonacci import fib
 
 
 def test_fib_valid_values():

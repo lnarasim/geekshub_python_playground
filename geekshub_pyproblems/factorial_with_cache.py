@@ -1,11 +1,14 @@
+"""A simple factorial that uses LRU Cache from functools"""
+
 from functools import lru_cache
-from time import perf_counter
 
 
 @lru_cache(maxsize=32, typed=True)
-def factorial_with_cache(n):
-    if not isinstance(n, int):
+def factorial_with_cache(number):
+    """Uses LRU Cache to optimize runtime by storing 'some' items in cache
+and kicking out some items"""
+    if not isinstance(number, int):
         raise ValueError("Invalid input")
-    if n <= 1:
+    if number <= 1:
         return 1
-    return n * factorial_with_cache(n-1)
+    return number * factorial_with_cache(number - 1)
