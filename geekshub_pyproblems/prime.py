@@ -1,6 +1,5 @@
-from math import inf
+"""Given a number, the function returns whether or not it is true"""
 
-# Given a number, the function returns whether or not it is true
 
 def is_prime(number: int):
     """
