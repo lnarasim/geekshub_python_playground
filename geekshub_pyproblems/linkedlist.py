@@ -85,7 +85,7 @@ class LinkedList:
             if len(s) == 0:
                 break
 
-    def get_linked_lst_str(self):
+    def __str__(self):
         lst = []
         current = self.head
         while current:
