@@ -1,0 +1,15 @@
+coverage run with pytest
+
+python -m pytest --cov-report html --cov-report xml --cov-report annotate --cov=geekshub_python_playground geekshub_python_playground\tests
+
+pytest -k
+1. Running tests where the given string is substring of tests functions and classes
+Ex: python -m pytest -v -k invalid
+
+2. Stop after first failure
+pytest -x            # stop after first failure
+
+3. Stop after two failures
+pytest --maxfail=2    # stop after two failures
+
+4.

@@ -1,5 +1,5 @@
 import pytest
-import stack
+from geekshub_pyproblems import stack
 
 
 @pytest.fixture

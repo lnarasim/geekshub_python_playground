@@ -1,5 +1,5 @@
 import pytest
-from factorial_with_cache import factorial_with_cache
+from geekshub_pyproblems.factorial_with_cache import factorial_with_cache
 
 
 def test_factorial_with_cache():

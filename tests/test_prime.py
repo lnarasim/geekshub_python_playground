@@ -1,5 +1,5 @@
 import pytest
-from prime import is_prime, next_prime
+from geekshub_pyproblems.prime import is_prime, next_prime
 
 
 def test_is_prime_negative_numbers():

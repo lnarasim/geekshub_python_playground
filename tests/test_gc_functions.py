@@ -1,4 +1,4 @@
-from gc_functions import is_object_in_gc
+from geekshub_pyproblems.gc_functions import is_object_in_gc
 
 
 class A:
