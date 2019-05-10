@@ -32,3 +32,5 @@ def area_of_rectangle(length, breadth):
 def area_of_square(side):
     """This function calculates area of a square"""
     return area_of_rectangle(side, side)
+
+

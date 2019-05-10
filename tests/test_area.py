@@ -118,7 +118,7 @@ def test_area_of_rectangle_invalid_values():
 def test_area_of_square_valid_values():
     side = 10
     area = area_of_square(side)
-    assert area == side * side
+    assert area == side * side * side
 
     side = 100
     area = area_of_square(side)
