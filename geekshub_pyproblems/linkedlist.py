@@ -19,7 +19,7 @@ class Node:
         self._item = an_item
 
     def __str__(self):
-        return f"{str(self.item)}, next = {self.next}"
+        return f"current = {str(self.item)}, next = {self.next.item}"
 
 
 class LinkedList:

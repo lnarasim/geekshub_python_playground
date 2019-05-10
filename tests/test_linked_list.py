@@ -130,3 +130,21 @@ def test_linked_list_reverse(linked_list):
     linked_list.reverse()
     result_rev = str(linked_list)
     assert result == result_rev[::-1]
+
+
+def test_node_str(linked_list):
+    linked_list.clear()
+
+    one = Node(1)
+    two = Node(2)
+
+    linked_list.insert(one)
+    assert not one.next
+
+    linked_list.insert(two)
+    assert one.next is two
+
+    assert str(one) == "current = 1, next = 2"
+
+
+
