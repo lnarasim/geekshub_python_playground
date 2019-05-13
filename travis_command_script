@@ -1,2 +1,9 @@
+echo 'Running pylint and finding potential bad practices/bugs'
 python -m pylint geekshub_pyproblems
+status = $?
+echo 'pylint status', $?
+
+echo 'Running pytest on the entire project'
 python -m pytest -v
+status = $?
+echo 'pytest status', $?
