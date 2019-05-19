@@ -3,7 +3,7 @@ implementation and deque. For various sizes of queue, plot the insert and
 retrieval response time"""
 
 from time import perf_counter
-from geekshub_pyproblems.queue import Queue
+from geekshub_pyproblems.my_queue import Queue
 
 
 def deque_benchmark(size):
