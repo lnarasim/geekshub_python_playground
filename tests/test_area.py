@@ -2,7 +2,6 @@ import pytest
 from geekshub_pyproblems.area import area_of_circle, area_of_rectangle, area_of_square
 import math
 
-
 def test_area_of_circle_valid_values():
     radius = 4
     area = area_of_circle(radius)
